@@ -26,8 +26,15 @@
 - API_KEY will nornally be as part of env variables files which will not be uploaded to GIT repo.  But for testing purpose, I've hard coded the key to get it working.
 - There is a MAX_LIMIT of the numbef of GIFs that can be accessed with the Trending and Search GIFs end point.
 - The Gifs are presended in a rows of 2 columns similar to how GIFs are used in WhatApp or imessage
+
+
+# Reasoning
+- I've used the latest template from react-native with typescript to make it simple.
 - I've used Async storage library to save the data to the local storage to make the data persistance. It is reliable and maintainable as well. In case we want to save sensitive data like token to persist, I would have chosen a different library for better encryption and security.
+- I've used react-hook-form as the validations are not complex.
 - I've left few default assets as such as it might be out of scope from the requirement point of view.
+- There are few nitty gritties that need to be taken care of, to make sure that the app is performant as expected which consumes little more time that expected.
+
 
 ### Features
 - Upon loading the page, on initial load the Trendings GIFs are loaded with the load limit of 15 and upon reaching the end of the list if the data is available, it'll display the GIFs based on the offset and the limit applicable.
