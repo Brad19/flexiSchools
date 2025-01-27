@@ -150,13 +150,6 @@ export default function EditScreenInfo() {
               }
               
             }
-            // console.log('gifs.length :', gifs.length);
-            // console.log('searchText :', searchText);
-            // if (gifs.length < DEFAULT_MAX_LIMIT && !searchText) {
-            //   fetchGifs(LOAD_LIMIT, LOAD_LIMIT)
-            // } else if (gifs.length < SEARCH_MAX_LIMIT && searchText) {
-            //   fetchGifs(LOAD_LIMIT, gifs.length+1, searchText)
-            // }
           }}
           ListFooterComponent={() => <View style={{paddingBottom: 30, marginBottom: 10}}/>}
           onRefresh={handleRefresh}
