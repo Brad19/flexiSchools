@@ -25,7 +25,6 @@ export const getTrendingGifs = async (limit: number, offset: number) : Promise<R
     } catch (error) {
         console.log('error in retrieveing GIF', error);
         throw error;
-        // return [];
     }
 }
 
